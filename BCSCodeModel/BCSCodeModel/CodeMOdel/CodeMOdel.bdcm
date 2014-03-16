@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="CodeMOdel">
+  <LobSystems>
+    <LobSystem Name="CodeMOdel" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="CodeMOdel" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="CodeEntity" Namespace="BCSCodeModel.CodeMOdel" Version="1.0.0.16">
+          <Properties>
+            <Property Name="Class" Type="System.String">BCSCodeModel.CodeMOdel.CodeEntityService, CodeMOdel</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="ID" TypeName="System.Int32" />
+          </Identifiers>
+          <Methods>
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Name="codeEntity" Direction="Return">
+                  <TypeDescriptor Name="CodeEntity" TypeName="BCSCodeModel.CodeMOdel.CodeEntity, CodeMOdel" IsCollection="false">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="ID" TypeName="System.Int32" IsCollection="false" IdentifierName="ID" />
+                      <TypeDescriptor Name="Name" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></Parameter>
+                <Parameter Name="iD" Direction="In">
+                  <TypeDescriptor Name="ID" TypeName="System.Int32" IdentifierEntityName="CodeEntity" IdentifierEntityNamespace="BCSCodeModel.CodeMOdel" IdentifierName="ID" IsCollection="false" /></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="ReadItem" Type="SpecificFinder" ReturnParameterName="codeEntity" ReturnTypeDescriptorPath="CodeEntity" />
+              </MethodInstances></Method>
+            <Method Name="ReadList">
+              <Parameters>
+                <Parameter Name="codeEntityList" Direction="Return">
+                  <TypeDescriptor Name="CodeEntityList" TypeName="System.Collections.Generic.IEnumerable`1[[BCSCodeModel.CodeMOdel.CodeEntity, CodeMOdel]]" IsCollection="true">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="CodeEntity" IsCollection="false" TypeName="BCSCodeModel.CodeMOdel.CodeEntity, CodeMOdel">
+                        <TypeDescriptors>
+                          <TypeDescriptor Name="ID" IdentifierName="ID" IsCollection="false" TypeName="System.Int32" />
+                          <TypeDescriptor Name="Name" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></TypeDescriptors></TypeDescriptor></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="ReadList" Type="Finder" ReturnParameterName="codeEntityList" ReturnTypeDescriptorPath="CodeEntityList" />
+              </MethodInstances></Method>
+          </Methods></Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CodeMOdel">
+  <modelRootMoniker Name="/CodeMOdel" />
+  <nestedChildShapes>
+    <entityShape Id="eeed7fe7-0d22-4f73-ab7d-3289cab08a2b" absoluteBounds="2.75, 1.75, 1.5, 1.59568359375">
+      <entityMoniker name="BCSCodeModel.CodeMOdel.CodeEntity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="26ab7008-4ffd-4ae4-9d5c-d281d2ffd776" absoluteBounds="2.765, 2.16, 1.4700000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="beb0b9c3-8d76-4083-a5d0-02a3f7854de6" absoluteBounds="2.765, 2.6116910807291669, 1.4700000000000002, 0.63399251302083326" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>
