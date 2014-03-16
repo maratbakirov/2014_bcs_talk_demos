@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE5FB8B8-9F2A-46E0-9B52-83F74BC94969}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sharepoint2013App</RootNamespace>
+    <AssemblyName>Sharepoint2013App</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>11.1</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{d267f65d-18f0-4594-acef-c24ebdecc3ef}</AppFeaturePartId>
+    <WspPartId>{bdd16321-dd71-4b07-a224-d925707a5248}</WspPartId>
+    <WorkflowPartId>{b8dfbd6c-3ecf-49bc-b58a-a1d8a01b9e61}</WorkflowPartId>
+    <CspkgPartId>{ab478a30-0c18-4210-ba87-f8484d390729}</CspkgPartId>
+    <SqlPackagePartId>{4bc884cc-7986-40ab-bcad-c4129c869af6}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="External Content Types\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59ee1bd4-6a7b-449d-a825-5129b45f5cc6}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\telerik\Attachments.ect" />
+    <None Include="External Content Types\telerik\Attachments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b77a732b-3671-4c8f-a6ff-899beeab706b}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\telerik\Authors.ect" />
+    <None Include="External Content Types\telerik\Authors\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f3fba6bc-8125-45c9-ac9d-7cae7a7cdf6a}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\telerik\Channels.ect" />
+    <None Include="External Content Types\telerik\Channels\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b1aef714-4b1f-4dab-99fe-920a105162ea}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\telerik\Libraries.ect" />
+    <None Include="External Content Types\telerik\Libraries\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a7375a25-24bc-4903-ae46-3089eb86083f}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\telerik\Series.ect" />
+    <None Include="External Content Types\telerik\Series\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{99251457-23c3-448c-94b9-bba0f221e454}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\telerik\Tags.ect" />
+    <None Include="External Content Types\telerik\Tags\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{14fdc3dd-5d62-42f8-ac7d-d7149a45bc96}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\telerik\Videos.ect" />
+    <None Include="External Content Types\telerik\Videos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c8b088ff-01a8-460b-ad9d-e7db9cc4708a}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73b6ac00-02dd-4b4e-94f1-3b9964f7f222}</SharePointProjectItemId>
+    </None>
+    <Content Include="External Content Types\Elements.xml" />
+    <Content Include="External Content Types\telerik\Attachments\Elements.xml" />
+    <Content Include="External Content Types\telerik\Authors\Elements.xml" />
+    <Content Include="External Content Types\telerik\Channels\Elements.xml" />
+    <Content Include="External Content Types\telerik\Libraries\Elements.xml" />
+    <Content Include="External Content Types\telerik\Series\Elements.xml" />
+    <Content Include="External Content Types\telerik\Tags\Elements.xml" />
+    <Content Include="External Content Types\telerik\Videos\Elements.xml" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4bc884cc-7986-40ab-bcad-c4129c869af6}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{01d96bca-4812-4a0d-bd53-ec15a8b0225c}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{83f8317a-b126-4708-b77a-a7bb2d46494b}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{09ebe009-1a0c-46ea-ad25-6e6b7708dc14}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{88980ab6-068f-4741-83f8-1d2124a4da5f}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
