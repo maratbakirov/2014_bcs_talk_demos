@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Url="Lists/ProductModelProductDescriptions" Description="ProductModelProductDescriptions" OnQuickLaunch="TRUE" Title="ProductModelProductDescriptions">
+    <DataSource>
+      <Property Name="LobSystemInstance" Value="AdventureWorks" />
+      <Property Name="EntityNamespace" Value="AdventureWorksModel" />
+      <Property Name="Entity" Value="ProductModelProductDescriptions" />
+      <Property Name="SpecificFinder" Value="ReadSpecificProductModelProductDescription" />
+      <Property Name="MetadataCatalogFileName" Value="BDCMetadata.bdcm" />
+    </DataSource>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="318fce3b-b68a-417a-9bdd-c0cf7a5ede03" 
+        solutionId="318fce3b-b68a-417a-9bdd-c0cf7a5ede03" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="TempApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="9eb0a6a3-06ea-4d9b-81b8-0faec771ce16" />
+  </features>
+</package>

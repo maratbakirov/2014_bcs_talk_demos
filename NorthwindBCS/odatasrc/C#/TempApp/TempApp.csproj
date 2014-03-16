@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4155691-53DD-4A17-9886-A460EF3E0E32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TempApp</RootNamespace>
+    <AssemblyName>TempApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>11.1</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{749297e4-f973-4d1e-a795-28a46cb91300}</AppFeaturePartId>
+    <WspPartId>{7d5be7ac-5693-425f-9898-48e166c81a42}</WspPartId>
+    <WorkflowPartId>{34db66ad-4ea3-479b-92a4-6a2d9f3540ea}</WorkflowPartId>
+    <CspkgPartId>{d579ca8c-89eb-4fbf-959f-9a6642daa0c5}</CspkgPartId>
+    <SqlPackagePartId>{69421bc7-c14b-430f-b337-802f0e4eebda}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="External Content Types\AdventureWorks\Addresses.ect" />
+    <None Include="External Content Types\AdventureWorks\Addresses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca95e389-ea0b-4be6-a3a0-a3e143b0c6a5}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\CustomerAddresses.ect" />
+    <None Include="External Content Types\AdventureWorks\CustomerAddresses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{00ddd1de-2c44-4ba0-9be4-c0c1321e4d44}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\Customers.ect" />
+    <None Include="External Content Types\AdventureWorks\Customers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{67457a8a-a587-4f83-9d5c-9bbcc6b06c36}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\ProductCategories.ect" />
+    <None Include="External Content Types\AdventureWorks\ProductCategories\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{11fb8575-5545-4b70-a9c4-8a3bb7653b0e}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\ProductDescriptions.ect" />
+    <None Include="External Content Types\AdventureWorks\ProductDescriptions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{525bfbea-ae52-4b23-bc0f-e988bd590b39}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\ProductModelProductDescriptions.ect" />
+    <None Include="External Content Types\AdventureWorks\ProductModelProductDescriptions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a4775a76-a630-4f04-81ac-176ecb0f7481}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\ProductModels.ect" />
+    <None Include="External Content Types\AdventureWorks\ProductModels\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fe036271-0291-4aea-a631-1964db8cc21a}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\Products.ect" />
+    <None Include="External Content Types\AdventureWorks\Products\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{db2c059e-1b38-4fa2-8cdd-261b0f024b1c}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\SalesOrderDetails.ect" />
+    <None Include="External Content Types\AdventureWorks\SalesOrderDetails\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c418ec6d-cd70-450f-a3a9-429ab1009406}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\SalesOrderHeaders.ect" />
+    <None Include="External Content Types\AdventureWorks\SalesOrderHeaders\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5dd545ec-1504-4668-aab1-963483072737}</SharePointProjectItemId>
+    </None>
+    <None Include="External Content Types\AdventureWorks\Service Operations.ect" />
+    <None Include="External Content Types\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5eca6761-37b7-4c20-bbd8-75e830cb8880}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{26a9887c-3dc7-4d9a-bbe7-c3dbe231d5a7}</SharePointProjectItemId>
+    </None>
+    <Content Include="External Content Types\AdventureWorks\Addresses\Elements.xml" />
+    <Content Include="External Content Types\AdventureWorks\CustomerAddresses\Elements.xml" />
+    <Content Include="External Content Types\AdventureWorks\Customers\Elements.xml" />
+    <Content Include="External Content Types\AdventureWorks\ProductCategories\Elements.xml" />
+    <Content Include="External Content Types\AdventureWorks\ProductDescriptions\Elements.xml" />
+    <Content Include="External Content Types\AdventureWorks\ProductModelProductDescriptions\Elements.xml" />
+    <Content Include="External Content Types\AdventureWorks\ProductModels\Elements.xml" />
+    <Content Include="External Content Types\AdventureWorks\Products\Elements.xml" />
+    <Content Include="External Content Types\AdventureWorks\SalesOrderDetails\Elements.xml" />
+    <Content Include="External Content Types\AdventureWorks\SalesOrderHeaders\Elements.xml" />
+    <Content Include="External Content Types\Elements.xml" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{69421bc7-c14b-430f-b337-802f0e4eebda}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eeca98d8-0048-4b68-8d0a-37f25171595a}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{20be8835-5de3-4ac6-a01b-fa3d358a1e04}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{318fce3b-b68a-417a-9bdd-c0cf7a5ede03}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9eb0a6a3-06ea-4d9b-81b8-0faec771ce16}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
